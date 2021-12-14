@@ -1,9 +1,6 @@
-const dotenv = require("dotenv");
-
-dotenv.config();
 const app = require("./app");
 const connectDatabase = require("./config/database");
-
+// const dotenv = require('dotenv')
 const cloudinary = require("cloudinary");
 
 //Handle Uncaught exceptions
@@ -42,6 +39,3 @@ process.on("unhandledRejection", (err) => {
     process.exit(1);
   });
 });
-
-// the_style_city
-// gPsmBBZzoQSf2FAe
